@@ -5,6 +5,6 @@
     <color name="colorAccent">#FF4081</color>
 
     <color name="table_text_default">#616161</color>
-    <color name="table_text_won">#0D47A1</color>
+    <color name="table_text_won">#65ba69</color>
     <color name="table_text_point">#000000</color>
 </resources>

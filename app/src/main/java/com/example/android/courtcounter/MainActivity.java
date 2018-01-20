@@ -28,6 +28,9 @@ public class MainActivity extends AppCompatActivity {
     ArrayList<TextView> tvSetTeamA = new ArrayList<TextView>();
     ArrayList<TextView> tvSetTeamB = new ArrayList<TextView>();
 
+    TextView tvTeamA;
+    TextView tvTeamB;
+
     int wonSetsA = 0;
     int wonSetsB = 0;
 
@@ -50,6 +53,9 @@ public class MainActivity extends AppCompatActivity {
         tvSetTeamB.add((TextView) findViewById(R.id.set_3_b));
         tvSetTeamB.add((TextView) findViewById(R.id.set_4_b));
         tvSetTeamB.add((TextView) findViewById(R.id.set_5_b));
+
+        tvTeamA = (TextView) findViewById(R.id.team_a);
+        tvTeamB = (TextView) findViewById(R.id.team_b);
     }
 
     /**
@@ -93,8 +99,10 @@ public class MainActivity extends AppCompatActivity {
         displaySetForTeamA();
         displaySetForTeamB();
 
-        if (wonSetsA == 3)
+        if (wonSetsA == 3){
             Toast.makeText(getApplicationContext(), "Team A wins!", Toast.LENGTH_SHORT).show();
+            tvTeamA.setTextColor(getResources().getColor(R.color.table_text_won));
+        }
     }
 
     /**
@@ -157,6 +165,7 @@ public class MainActivity extends AppCompatActivity {
             displaySetForTeamB();
             if (wonSetsB == 3) {
                 Toast.makeText(getApplicationContext(), "Team B wins!", Toast.LENGTH_SHORT).show();
+                tvTeamB.setTextColor(getResources().getColor(R.color.table_text_won));
             }
         }
     }
@@ -215,9 +224,11 @@ public class MainActivity extends AppCompatActivity {
      */
     public void resetColor() {
         for (int i = 1; i <= 5; i++) {
-            tvSetTeamA.get(i).setTextColor(Color.parseColor("#616161"));
-            tvSetTeamB.get(i).setTextColor(Color.parseColor("#616161"));
+            tvSetTeamA.get(i).setTextColor(getResources().getColor(R.color.table_text_default));
+            tvSetTeamB.get(i).setTextColor(getResources().getColor(R.color.table_text_default));
         }
+        tvTeamA.setTextColor(getResources().getColor(R.color.table_text_default));
+        tvTeamB.setTextColor(getResources().getColor(R.color.table_text_default));
     }
 
     /**
@@ -243,7 +254,7 @@ public class MainActivity extends AppCompatActivity {
         for (int i = 1; i <=5; i++){
             tvSetTeamA.get(i).setText(String.valueOf(setScoreA[i]));
             if (setWonTeamA[i]) {
-                tvSetTeamA.get(i).setTextColor(Color.parseColor("#0D47A1"));
+                tvSetTeamA.get(i).setTextColor(getResources().getColor(R.color.table_text_won));
                 tvSetTeamB.get(i).setTextColor(Color.parseColor("#000000"));
             }
         }
@@ -256,7 +267,7 @@ public class MainActivity extends AppCompatActivity {
         for (int i = 1; i <=5; i++){
             tvSetTeamB.get(i).setText(String.valueOf(setScoreB[i]));
             if (setWonTeamB[i]) {
-                tvSetTeamB.get(i).setTextColor(Color.parseColor("#0D47A1"));
+                tvSetTeamB.get(i).setTextColor(getResources().getColor(R.color.table_text_won));
                 tvSetTeamA.get(i).setTextColor(Color.parseColor("#000000"));
             }
         }
