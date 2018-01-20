@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fillViewport="true"
+
+    tools:context="com.example.android.courtcounter.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/table_margin"
+            android:columnCount="6"
+            android:rowCount="3"
+            android:stretchColumns="*">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/table_margin"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:text="Team/Set"
+                    android:textAllCaps="false"
+                    android:textColor="@color/table_text_default"
+                    android:textSize="@dimen/table_text_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/table_margin"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textAllCaps="false"
+                    android:textColor="@color/table_text_default"
+                    android:textSize="@dimen/table_text_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/table_margin"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textAllCaps="false"
+                    android:textColor="@color/table_text_default"
+                    android:textSize="@dimen/table_text_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/table_margin"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textAllCaps="false"
+                    android:textColor="@color/table_text_default"
+                    android:textSize="@dimen/table_text_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/table_margin"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:text="4"
+                    android:textAllCaps="false"
+                    android:textColor="@color/table_text_default"
+                    android:textSize="@dimen/table_text_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/table_margin"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:text="5"
+                    android:textAllCaps="false"
+                    android:textColor="@color/table_text_default"
+                    android:textSize="@dimen/table_text_size" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/table_margin"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:text="Team A"
+                    android:textAllCaps="false"
+                    android:textColor="@color/table_text_default"
+                    android:textSize="@dimen/table_text_size" />
+
+                <TextView
+                    android:id="@+id/set_1_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/table_margin"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textAllCaps="false"
+                    android:textColor="@color/table_text_default"
+                    android:textSize="@dimen/table_text_size" />
+
+                <TextView
+                    android:id="@+id/set_2_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/table_margin"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textAllCaps="false"
+                    android:textColor="@color/table_text_default"
+                    android:textSize="@dimen/table_text_size" />
+
+                <TextView
+                    android:id="@+id/set_3_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/table_margin"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textAllCaps="false"
+                    android:textColor="@color/table_text_default"
+                    android:textSize="@dimen/table_text_size" />
+
+                <TextView
+                    android:id="@+id/set_4_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/table_margin"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textAllCaps="false"
+                    android:textColor="@color/table_text_default"
+                    android:textSize="@dimen/table_text_size" />
+
+                <TextView
+                    android:id="@+id/set_5_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/table_margin"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textAllCaps="false"
+                    android:textColor="@color/table_text_default"
+                    android:textSize="@dimen/table_text_size" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/table_margin"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:text="Team B"
+                    android:textAllCaps="false"
+                    android:textColor="@color/table_text_default"
+                    android:textSize="@dimen/table_text_size" />
+
+                <TextView
+                    android:id="@+id/set_1_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/table_margin"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textAllCaps="false"
+                    android:textColor="@color/table_text_default"
+                    android:textSize="@dimen/table_text_size" />
+
+                <TextView
+                    android:id="@+id/set_2_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/table_margin"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textAllCaps="false"
+                    android:textColor="@color/table_text_default"
+                    android:textSize="@dimen/table_text_size" />
+
+                <TextView
+                    android:id="@+id/set_3_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/table_margin"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textAllCaps="false"
+                    android:textColor="@color/table_text_default"
+                    android:textSize="@dimen/table_text_size" />
+
+                <TextView
+                    android:id="@+id/set_4_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/table_margin"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textAllCaps="false"
+                    android:textColor="@color/table_text_default"
+                    android:textSize="@dimen/table_text_size" />
+
+                <TextView
+                    android:id="@+id/set_5_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/table_margin"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textAllCaps="false"
+                    android:textColor="@color/table_text_default"
+                    android:textSize="@dimen/table_text_size" />
+            </TableRow>
+        </TableLayout>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/table_margin"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="Team A"
+            android:textAllCaps="false"
+            android:textColor="@color/table_text_default"
+            android:textSize="@dimen/table_text_size"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="3"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:gravity="center_vertical"
+
+                >
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_side"
+                    android:layout_marginLeft="@dimen/margin_side"
+                    android:onClick="addPointTeamA"
+                    android:text="Point"
+                    android:textAllCaps="true" />
+
+                <TextView
+                    android:id="@+id/team_a_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="0"
+                    android:textAllCaps="true"
+                    android:textColor="@color/table_text_point"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/text_size_score" />
+            </TableRow>
+
+            <TableRow
+                android:gravity="center_vertical">
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="addAceTeamA"
+                    android:text="Ace"
+                    android:layout_marginRight="@dimen/margin_side"
+                    android:layout_marginLeft="@dimen/margin_side"
+                    android:textAllCaps="true" />
+
+                <TextView
+                    android:id="@+id/team_a_ace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="0"
+                    android:textAllCaps="true"
+                    android:textColor="@color/table_text_point"
+                    android:textSize="@dimen/text_size"
+                    android:layout_gravity="center"/>
+
+            </TableRow>
+
+            <TableRow
+                android:gravity="center_vertical">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="addChallengeTeamA"
+                    android:layout_marginRight="@dimen/margin_side"
+                    android:layout_marginLeft="@dimen/margin_side"
+                    android:text="Challenge"
+                    android:textAllCaps="true" />
+
+
+                <TextView
+                    android:id="@+id/team_a_challenge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="0"
+                    android:textAllCaps="true"
+                    android:textColor="@color/table_text_point"
+                    android:textSize="@dimen/text_size"
+                    android:layout_gravity="center"/>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_small"
+            android:background="@android:color/darker_gray" />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/table_margin"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="Team B"
+                android:textAllCaps="false"
+                android:textColor="@color/table_text_default"
+                android:textSize="@dimen/table_text_size" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:rowCount="3"
+                android:stretchColumns="*">
+
+                <TableRow
+                    android:gravity="center_vertical">
+                    <TextView
+                        android:id="@+id/team_b_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-light"
+                        android:text="0"
+                        android:textAllCaps="true"
+                        android:textColor="@color/table_text_point"
+                        android:textSize="@dimen/text_size_score" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin_side"
+                        android:layout_marginLeft="@dimen/margin_side"
+                        android:onClick="addPointTeamB"
+                        android:text="Point"
+                        android:textAllCaps="true" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:id="@+id/team_b_ace"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:text="0"
+                        android:textAllCaps="true"
+                        android:textColor="@color/table_text_point"
+                        android:textSize="@dimen/text_size"
+                        android:gravity="right"
+                        android:layout_gravity="center"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="addAceTeamB"
+                        android:text="Ace"
+                        android:layout_marginRight="@dimen/margin_side"
+                        android:layout_marginLeft="@dimen/margin_side"
+                        android:textAllCaps="true" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:id="@+id/team_b_challenge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:text="0"
+                        android:textAllCaps="true"
+                        android:textColor="@color/table_text_point"
+                        android:textSize="@dimen/text_size"
+                        android:gravity="right"
+                        android:layout_gravity="center"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="addChallengeTeamB"
+                        android:layout_marginRight="@dimen/margin_side"
+                        android:layout_marginLeft="@dimen/margin_side"
+                        android:text="Challenge"
+                        android:textAllCaps="true" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:onClick="resetScore"
+            android:text="Reset"
+            android:textAllCaps="true"/>
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

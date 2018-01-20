@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Volleyball</string>
+    <string name="team_set">Team/Set</string>
+    <string name="team_a">Team A</string>
+    <string name="team_b">Team B</string>
+    <string name="point">Point</string>
+    <string name="ace">Ace</string>
+    <string name="challenge">Challenge</string>
+    <string name="reset">Reset</string>
+</resources>
